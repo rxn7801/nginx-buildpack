@@ -29,7 +29,7 @@ http {
  	}
 
 	server {
-		listen 5000;
+		listen [::]:<%= ENV["PORT"] %>;
 		server_name _;
 		keepalive_timeout 5;
 
